@@ -1,0 +1,18 @@
+splunk:
+  base_url: "https://your-splunk-host:8089"
+  username: "admin"
+  password: "changeme"
+  verify_ssl: true
+
+mcp:
+  transport: "http"          # or "stdio" depending on your setup
+  base_url: "http://localhost:8000"  # MCP HTTP endpoint if using SSE/HTTP
+
+saia:
+  endpoint: "https://your-splunk-host:8000/en-US/splunkd/__raw/services/saia/generate_spl"
+  api_token: "YOUR-SAIA-TOKEN"
+
+ai_toolkit:
+  endpoint: "https://your-splunk-host:8000/en-US/splunkd/__raw/services/ai_toolkit/infer"
+  model_name: "security-investigation-model"
+  api_token: "YOUR-AITK-TOKEN"
